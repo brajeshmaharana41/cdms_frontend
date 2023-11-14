@@ -1,0 +1,80 @@
+#background::part(background){
+    height: 100%;
+    background-image: url('../../assets/Images/Home.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+.scr_height{
+    height: 100%;
+}
+.row_height{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_title{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Montserrat;
+    color: #221aa4;
+}
+.login_subtitle{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Montserrat;
+    color: #000;
+}
+.input_box{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Montserrat;
+    color: #000;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.input_field{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Montserrat;
+    color: #000;
+    width: 100%;
+    height: 38px;
+    border: none;
+    outline:none;
+    background-color: transparent;
+}
+.btn{
+    border-radius: 3px;
+    width: 100%;
+    height: 40px;
+    color: #2219a4;
+    border: 1px solid #2219a4;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Montserrat;
+}
+.btns{
+    border-radius: 3px;
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background-color: #2219a4;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+.p1{
+    padding: 5px;
+}

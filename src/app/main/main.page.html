@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true" id="background">
+  <ion-grid class="scr_height">
+    <ion-row class="row_height">
+      <ion-col class="col_center">
+        <img src="../../assets/Images/logo.png" alt="">
+      </ion-col>
+    </ion-row>
+    <ion-row class="row_height">
+      <ion-col>
+        <div>
+          <ion-row>
+            <ion-col class="login_title">Login</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="login_subtitle">Select Type of user</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <button class="btns" [routerLink]="['/gov']" router-direction="forward">Government Portal</button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <button class="btn" [routerLink]="['/citizen']" router-direction="forward">Citizen Portal</button>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <button class="btn" [routerLink]="['/rbi']" router-direction="forward">RBI Portal</button>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

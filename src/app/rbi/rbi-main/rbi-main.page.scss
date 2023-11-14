@@ -1,0 +1,82 @@
+.side_menu_bg{
+    background-color: #fff;
+    height: 250px;
+}
+.top_pad{
+    text-align: center;
+    padding-top: 10px;
+}
+#bg{
+    --background: #d7d8da17;
+}
+.side_title_padd{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+.pad_top{
+    height: 100%;
+    padding-top: 3px;
+}
+.side_col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.side_title{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Montserrat;
+    color: #000;
+}
+.side_btn{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #00000026; 
+    --background: #2219a424;
+    border-radius: 5px;
+    text-align: start;
+    margin-top: 50px
+}
+.side_btn_col{
+    border-right: 1px solid #4c4c4c66;
+    margin: 5px; 
+}
+.side_ion_wallet{
+    font-size: 30px;
+    margin-left: 15px;
+    color: #000;
+    text-align: start;
+}
+.side_ammount{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Montserrat;
+    color: #696262cf;
+    text-align: left;
+}
+.list_bg::part(native){
+    --background: transparent;
+    color: #000;
+}
+.list_bg::part(native):hover{
+    --background: #2219a4;
+    color: #fff;
+    border-radius: 5px;
+}
+.list_lable{
+    font-weight: 700;
+    font-family: Montserrat;
+}
+.title_padding{
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Montserrat;
+}
+.tab_name{
+    font-family: Montserrat;
+    margin-top: 5px;
+}

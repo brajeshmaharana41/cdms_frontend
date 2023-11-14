@@ -1,0 +1,44 @@
+<ion-content [fullscreen]="true" id="background">
+  <ion-grid class="scr_height">
+    <ion-row class="row_height">
+      <ion-col class="col_center">
+        <img src="../../assets/Images/logo.png" alt="">
+      </ion-col>
+    </ion-row>
+    <ion-row class="row_height">
+      <ion-col>
+        <div>
+          <ion-row class="ion-text-center">
+            <ion-col class="login_title">OTP Verification</ion-col>
+          </ion-row>
+          <ion-row class="ion-text-center">
+            <ion-col class="login_subtitle">Please Enter The OTP Sent On Your <br> Regesterd Phone</ion-col>
+          </ion-row>          
+          <ion-row>
+            <ion-col>
+              <ion-row class="input_otp">
+                <ion-col size="3" class="p2">
+                    <ion-input #otp1 maxLength="1" placeholder="0" (keyup)="next(otp2)" size="1"></ion-input>
+                </ion-col>
+                <ion-col size="3" class="p2">
+                  <ion-input #otp2 maxLength="1" placeholder="0" (keyup)="next(otp3)" size="1"></ion-input>
+                </ion-col>
+                <ion-col size="3" class="p2">
+                  <ion-input #otp3 maxLength="1" placeholder="0" (keyup)="next(otp4)" size="1"></ion-input>
+                </ion-col>
+                <ion-col size="3" class="p2">
+                  <ion-input #otp4 maxLength="1" placeholder="0" size="1"></ion-input>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <button class="btns" [routerLink]="['/citizen/citizen-otp/citizen-main']" router-direction="forward">Verify</button>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

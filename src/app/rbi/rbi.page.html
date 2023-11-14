@@ -1,0 +1,38 @@
+<ion-content [fullscreen]="true" id="background">
+  <ion-grid class="scr_height">
+    <ion-row class="row_height">
+      <ion-col class="col_center">
+        <img src="../../assets/Images/logo.png" alt="">
+      </ion-col>
+    </ion-row>
+    <ion-row class="row_height">
+      <ion-col>
+        <div>
+          <ion-row>
+            <ion-col class="login_title">RBI Login</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col class="login_subtitle">Please Enter Your Details</ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              <ion-row class="input_box">
+                <ion-col size="4" class="p1">
+                  <span class="login_subtitle">User Name : </span>
+                </ion-col>
+                <ion-col size="8">
+                  <ion-input type="text" placeholder="Enter User Name" class="input_field"></ion-input>
+                </ion-col>
+              </ion-row>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="12">
+              <button class="btns" [routerLink]="['/rbi/rbi-main/rbi-dashboard']" router-direction="forward">Login</button>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

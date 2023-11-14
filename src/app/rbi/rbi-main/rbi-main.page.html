@@ -1,0 +1,71 @@
+<ion-menu contentId="main-content">
+  <ion-content class="ion-padding" id="bg">
+    <ion-row class="side_menu_bg">
+      <ion-col size="12">
+        <ion-row class="top_pad">
+          <ion-col size="12">
+            <ion-title class="side_title_padd">RBI Portal</ion-title>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-row class="pad_top">
+              <ion-col size="12" class="side_col">
+                <ion-row>
+                  <img src="../../../assets//Images/RBILogo.png" alt="">
+                </ion-row>
+                <ion-row>
+                  <span class="side_title">CBDC</span>
+                </ion-row>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-button class="side_btn">
+            <ion-col size="3" class="side_btn_col">
+              <ion-icon name="wallet-outline" class="side_ion_wallet"></ion-icon>
+            </ion-col>
+            <ion-col size="9">
+              <span class="side_ammount">1000</span>
+            </ion-col>
+          </ion-button>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-list lines="full" style="background: transparent;">
+              <ion-item class="list_bg">
+                <ion-label class="list_lable">Home</ion-label>
+              </ion-item>
+            </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-content>
+</ion-menu>
+
+<ion-header [translucent]="true">
+  <ion-toolbar style="height: 4rem;">
+    <ion-buttons slot="start" id="main-content">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <img src="../../../assets/Images/RBILogo.png" alt="" width="40">
+    </ion-buttons>
+    <ion-title class="title_padding">
+      RBI Portel
+    </ion-title>
+    <ion-buttons slot="end" [routerLink]="['/']">
+      <ion-icon name="log-out-outline" class="side_ion_wallet"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="tab1" [routerLink]="['/gov/gov-main/dashboard']" router-direction="forward">
+      <ion-icon name="home-outline"></ion-icon>
+      <span class="tab_name">Dashboard</span>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

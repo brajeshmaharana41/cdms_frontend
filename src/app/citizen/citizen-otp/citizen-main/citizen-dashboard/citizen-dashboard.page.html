@@ -1,0 +1,69 @@
+<ion-content [fullscreen]="true" id="bg">
+  <div class="content_pd">
+    <div class="container">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <span class="dashboard_title">Dashboard</span>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="6">
+            <ion-card class="card_data">
+              <ion-card-content class="card_content">
+                <div class="border_icon">
+                  <ion-icon name="reader-outline" class="icon_wellet"></ion-icon>
+                </div>
+                <div>
+                  <span class="card_value">200,000</span>
+                </div>
+              </ion-card-content>
+              <ion-card-header class="card_header">
+                <ion-card-title class="card_title">Total Paid</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+          <ion-col size="6">
+            <ion-card class="card_data">
+              <ion-card-content class="card_content">
+                <div class="border_icon">
+                  <ion-icon name="repeat-outline" class="icon_wellet"></ion-icon>
+                </div>
+                <div>
+                  <span class="card_value">12</span>
+                </div>
+              </ion-card-content>
+              <ion-card-header class="card_header">
+                <ion-card-title class="card_title">Transaction</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </ion-col>
+        </ion-row>
+        <ion-row style="margin-top: 4rem;">
+          <ion-col>
+            <span class="dashboard_title">Pending History</span>
+          </ion-col>
+        </ion-row>
+        <ion-list>
+          <ion-item *ngFor="let item of transaction; let index">
+            <ion-row style="width: 100%; height: 4rem; display: flex; align-items: center;">
+              <ion-col size="9">
+                <div>
+                  <ion-label style="font-size: 1.1rem; font-family: Montserrat;">{{item.from}}</ion-label>
+                </div>
+              </ion-col>
+              <ion-col size="3" style="text-align: center;">
+                <div>
+                  <ion-label style="font-size: 1.1rem; font-family: Montserrat;">{{item.value}}</ion-label>
+                </div>
+                <div>
+                  <ion-label style="font-size: 1.0rem; font-family: Montserrat;">CBDC</ion-label>
+                </div>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+        </ion-list>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>
